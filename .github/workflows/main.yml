@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   generate-sbom:
@@ -30,4 +31,4 @@ jobs:
         name: sbom-report
         path: |
           ./spdx.json
-          ./cyclonedx.json
+          ./cyclonedx.json 
